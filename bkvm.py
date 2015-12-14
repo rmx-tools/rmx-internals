@@ -5,7 +5,7 @@ import commands, time
 def prepareTarget():
    print "prepare backup Target"
    print "---------------------"
-   cmd = "mount -t cifs //10.0.0.9/public/BK\ VM\ XEN -o username=xxx,password=yyy /bak/"
+   cmd = "mount -t cifs //xxxxxx/public/BK\ VM\ XEN -o username=xxx,password=yyy /bak/"
    output = commands.getoutput(cmd)
    cmd = "ls -lht --time-style=\"long-iso\"  /bak/"
    output = commands.getoutput(cmd)
